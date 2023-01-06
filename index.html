@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Chris's Portfolio</title>
+  </head>
+  <body>
+    <header>
+        <a href="#" class="logo">Chris logo</a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Works</a></li>
+            <li><a href="#">Contact</a></li>
+
+        </ul>
+    </header>
+    <section>
+        <img src="cyber.gif" id="cyber">
+        <h2 id="text">Welcome</h2>
+        <a href="#sec" id="btn">Explore</a>
+    </section>
+    <div class="sec" id="sec">
+        <h2>Scrolling effect</h2>
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            <br></br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br></br>
+        </p>
+    </div>
+    <script>
+        let cyber = document.getElementById(cyber)
+        let button = document.getElementById(btn)
+        let text = document.getElementById(text)
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            //not working
+            text.style.marginRight = value * 4 + 'px';
+        })
+    </script>
+  </body>
+</html>
